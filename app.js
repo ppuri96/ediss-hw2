@@ -9,7 +9,7 @@ var con = mysql.createConnection({
 	host: 'ediss-hw1-db.cg4gso8l3psc.us-east-2.rds.amazonaws.com',
 	port: '3306',
 	user: 'root',
-	password: process.env.DB_PASSWORD,
+	password: process.env.dbpwd,
 	database: 'edisshw2'
 })
 
