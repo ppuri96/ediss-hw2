@@ -62,6 +62,11 @@ function requireAdminLogin(req, res, next) {
 	}
 };
 
+// GET
+app.get('/', function(req, res) {
+	res.sendStatus(200);
+});
+
 // POST /registerUser
 app.post('/registerUser', function(req,res) {
 	var fname = req.query.fname;
